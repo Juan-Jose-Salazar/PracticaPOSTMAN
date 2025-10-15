@@ -6,7 +6,7 @@ namespace lib_repositorios.Interfaces
 {
     public interface IConexion
     {
-        string? StringConexion { get; }
+        string? StringConexion { get; set; }
 
         DbSet<Usuarios>? Usuarios { get; set; }
         DbSet<Roles>? Roles { get; set; }

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lib_dominio", "lib_dominio\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lib_repositorios", "lib_repositorios\lib_repositorios.csproj", "{919D5163-1002-4F30-9B2B-62344660D52B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asp_servicios", "asp_servicios\asp_servicios.csproj", "{8CADFF06-F3B2-4108-AD60-0FCE5A5E39ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{919D5163-1002-4F30-9B2B-62344660D52B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{919D5163-1002-4F30-9B2B-62344660D52B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{919D5163-1002-4F30-9B2B-62344660D52B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CADFF06-F3B2-4108-AD60-0FCE5A5E39ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CADFF06-F3B2-4108-AD60-0FCE5A5E39ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CADFF06-F3B2-4108-AD60-0FCE5A5E39ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CADFF06-F3B2-4108-AD60-0FCE5A5E39ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5DCB91C3-D03B-427D-9A1D-E52D3EA913AC} = {B5A9EC00-F91D-4582-8B92-66FC545B0ADF}
 		{919D5163-1002-4F30-9B2B-62344660D52B} = {AEEA3A38-028A-422D-B2CA-BFC3BD83B4B5}
+		{8CADFF06-F3B2-4108-AD60-0FCE5A5E39ED} = {AEEA3A38-028A-422D-B2CA-BFC3BD83B4B5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4E1624D3-6F78-41A5-84F7-A4254D950F95}
