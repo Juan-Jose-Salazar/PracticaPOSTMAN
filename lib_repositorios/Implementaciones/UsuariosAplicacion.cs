@@ -21,18 +21,26 @@ namespace lib_repositorios.Implementaciones
         {
             if (entidad == null)
                 throw new Exception("lbFaltaInformacion");
-            if (entidad!.IdUsuario == 0)
-                throw new Exception("lbNoSeGuardo");
-            this.IConexion!.Usuarios!.Remove(entidad);
+
+            var usuarioExistente = this.IConexion!.Usuarios!.FirstOrDefault(u => u.IdUsuario == entidad.IdUsuario);
+              
+            if (usuarioExistente == null)
+                throw new Exception("El usuario no existe o ya fue eliminado");
+            this.IConexion!.Usuarios!.Remove(usuarioExistente);
             this.IConexion.SaveChanges();
-            return entidad;
+            return usuarioExistente;
         }
         public Usuarios? Guardar(Usuarios? entidad)
         {
             if (entidad == null)
                 throw new Exception("lbFaltaInformacion");
-            if (entidad.IdUsuario != 0)
-                throw new Exception("lbYaSeGuardo");
+
+
+
+            var usuarioExistente = this.IConexion!.Usuarios!.FirstOrDefault(u => u.Email == entidad.Email);
+
+            if (usuarioExistente != null)
+                throw new Exception("El usuario ya existe. Use el método Actualizar.");
             this.IConexion!.Usuarios!.Add(entidad);
             this.IConexion.SaveChanges();
             return entidad;

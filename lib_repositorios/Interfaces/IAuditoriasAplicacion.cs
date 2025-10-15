@@ -11,7 +11,7 @@ namespace lib_repositorios.Interfaces
     {
         void Configurar(string StringConexion);
 
-        List<Auditorias> PorAccion(Auditorias? entidad);
+        List<Auditorias> PorAccion(string accion, int IdUsuario);
 
         List<Auditorias> Listar();
         Auditorias? Guardar(Auditorias? entidad);

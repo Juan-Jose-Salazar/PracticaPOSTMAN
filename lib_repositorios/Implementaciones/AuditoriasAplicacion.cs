@@ -39,11 +39,12 @@ namespace lib_repositorios.Implementaciones
         {
             return this.IConexion!.Auditorias!.Take(20).ToList();
         }
-        public List<Auditorias> PorAccion(Auditorias? entidad)
+        public List<Auditorias> PorAccion(string accion, int IdUsuario)
         {
             return this.IConexion!.Auditorias!
-            .Where(x => x.Accion!.Contains(entidad!.Accion!))
-            .ToList();
+                .Where(x => x.Accion!.Contains(accion))
+                .Take(20)
+                .ToList();
         }
         public Auditorias? Modificar(Auditorias? entidad)
         {
